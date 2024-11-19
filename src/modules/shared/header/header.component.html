@@ -33,15 +33,22 @@
         </li>
       </ul>
     </nav>
-    <div class="profile">
+    <div class="profile" *ngIf="currentPage == ''">
       <a [routerLink]="['/auth/login']" class="nav-link p-4 hover:text-blue-500"
         >Login</a
       >
       <a
         [routerLink]="['/auth/register']"
         class="nav-link p-4 hover:text-blue-500"
-        >Register</a
       >
+        Register</a
+      >
+    </div>
+
+    <div class="profile" *ngIf="currentPage == 'about'">
+      <a [routerLink]="['/user']">
+        <img [src]="userLogo" class="w-8 h-8" alt="" />
+      </a>
     </div>
   </div>
 </header>
