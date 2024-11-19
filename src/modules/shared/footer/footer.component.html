@@ -1,0 +1,68 @@
+<footer class="shadow-md border border-t-2">
+  <div
+    class="content flex justify-between items-center w-[80%] m-auto border-b-2 mb-2"
+  >
+    <div class="home w-[40%]">
+      <a [routerLink]="['/']" class="navbrand flex items-center gap-x-2">
+        <img [src]="logo" alt="Logo" class="w-14 h-14" />
+        <span class="text-2xl">{{ textLogo }}</span>
+      </a>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam qui
+        molestiae modi porro eum expedita repudiandae, ex laboriosam ducimus
+        necessitatibus!
+      </p>
+    </div>
+    <div class="menu">
+      <span class="text-2xl font-medium">Menu</span>
+      <nav class="navbar">
+        <ul class="nav-list">
+          <li class="nav-tem">
+            <a [routerLink]="['/']" class="nav-link text-blue-500">Home</a>
+          </li>
+          <li class="nav-tem">
+            <a [routerLink]="['/quizzes']" class="nav-link text-blue-500"
+              >Quizzes</a
+            >
+          </li>
+          <li class="nav-tem">
+            <a [routerLink]="['/about']" class="nav-link text-blue-500"
+              >About</a
+            >
+          </li>
+          <li class="nav-tem">
+            <a [routerLink]="['/contact']" class="nav-link text-blue-500"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="contact">
+      <p class="text-2xl font-medium">Contact</p>
+      <div class="contact-group">
+        <i class=""></i>
+        <a
+          href="mailto:maiphong2203@gmail.com"
+          class="contact-link text-blue-500"
+        >
+          maiphong2203&#64;gmail.com
+        </a>
+      </div>
+
+      <div class="contact-group">
+        <i class="fa-solid fa-phone"></i>
+        <a href="tel:" class="contact-link text-blue-500">+84 678 984</a>
+      </div>
+      <div class="contact-group">
+        <i class=""></i>
+        <a href="mailto:" class="contact-link text-blue-500"
+          >Đông Hạ, Đông Yên, Quốc Oai, Hà Nội</a
+        >
+      </div>
+    </div>
+  </div>
+  <div class="footer-title">
+    <p class="text-center mb-2">&copy; {{ date }} - Angular 18</p>
+  </div>
+</footer>
