@@ -1,0 +1,63 @@
+<div class="container w-[80%] m-auto">
+  <div class="intro flex justify-between items-center">
+    <div class="intro-group w-[55%]">
+      <h2 class="text-3xl font-bold">Welcome to Quiz App</h2>
+      <p class="my-4 text-lg">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam
+        sint totam perspiciatis recusandae minima earum facilis porro fugit eum
+        distinctio Lorem ipsum dolor sit amet.
+      </p>
+      <a
+        [routerLink]="['/quizzes']"
+        class="p-2 bg-cyan-400 rounded-md block max-w-[100px] text-white"
+        >Take a quiz</a
+      >
+    </div>
+    <img [src]="quiz01" alt="Quiz image" class="w-96 h-96" />
+  </div>
+
+  <div class="content my-12">
+    <h2 class="text-3xl font-bold text-center mb-8">Quizzes</h2>
+    <div class="quizzes flex justify-between items-center">
+      <div class="quizze rounded-2xl border border-gray-300 overflow-hidden">
+        <img [src]="quiz02" alt="" />
+        <div class="detail flex justify-between items-center px-2 mb-4">
+          <p class="font-black text-lg">Capital of country</p>
+          <p class="text-gray-300 text-lg">{{ time | format }}</p>
+        </div>
+        <p class="px-2 mb-6 text-lg">Test your knowledge of country capitals</p>
+        <a
+          [routerLink]="['/quizzes']"
+          class="bg-cyan-400 block rounded-md text-white"
+          >Start</a
+        >
+      </div>
+      <div class="quizze rounded-2xl border border-gray-300 overflow-hidden">
+        <img [src]="quiz03" alt="" />
+        <div class="detail flex justify-between items-center px-2 mb-4">
+          <p class="font-black text-lg">Capital of country</p>
+          <p class="text-gray-300 text-lg">{{ time | format }}</p>
+        </div>
+        <p class="px-2 mb-6 text-lg">Test your knowledge of country capitals</p>
+        <a
+          [routerLink]="['/quizzes']"
+          class="bg-cyan-400 block rounded-md text-white"
+          >Start</a
+        >
+      </div>
+      <div class="quizze rounded-2xl border border-gray-300 overflow-hidden">
+        <img [src]="quiz04" alt="" />
+        <div class="detail flex justify-between items-center px-2 mb-4">
+          <p class="font-black text-lg">Capital of country</p>
+          <p class="text-gray-300 text-lg">{{ time | format }}</p>
+        </div>
+        <p class="px-2 mb-6 text-lg">Test your knowledge of country capitals</p>
+        <a
+          [routerLink]="['/quizzes']"
+          class="bg-cyan-400 block rounded-md text-white"
+          >Start</a
+        >
+      </div>
+    </div>
+  </div>
+</div>

@@ -5,5 +5,6 @@ export const routes: Routes = [
     {
         path: '',
         component: UserLayoutComponent,
+        loadChildren: () => import('./user/user.module').then(m => m.UserModule)
     }
 ];
