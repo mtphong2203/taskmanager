@@ -1,1 +1,68 @@
-<p>about works!</p>
+<div class="container w-[80%] m-auto">
+  <div class="content flex justify-between items-center mt-8">
+    <div class="content-side">
+      <div class="home w-[40%]">
+        <a [routerLink]="['/']" class="navbrand flex items-center gap-x-2">
+          <img [src]="logo" alt="Logo" class="w-14 h-14" />
+          <span class="text-2xl">{{ textLogo }}</span>
+        </a>
+        <p class="mb-2 w-[600px]">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam qui
+          molestiae modi porro eum expedita repudiandae, ex laboriosam ducimus
+          necessitatibus Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Eos, amet.!
+        </p>
+      </div>
+      <div class="contact">
+        <p class="text-2xl font-medium mb-1">Contact</p>
+        <div class="contact-group">
+          <i class=""></i>
+          <a
+            href="mailto:maiphong2203@gmail.com"
+            class="contact-link text-blue-500"
+          >
+            maiphong2203&#64;gmail.com
+          </a>
+        </div>
+        <div class="contact-group">
+          <i class="fa-solid fa-phone"></i>
+          <a href="tel:" class="contact-link text-blue-500">+84 678 984</a>
+        </div>
+        <div class="contact-group">
+          <i class=""></i>
+          <a href="mailto:" class="contact-link text-blue-500"
+            >Đông Hạ, Đông Yên, Quốc Oai, Hà Nội</a
+          >
+        </div>
+      </div>
+    </div>
+    <img [src]="quiz01" alt="Quiz image" class="w-96 h-96" />
+  </div>
+
+  <div class="team-intro mb-4">
+    <h2 class="font-medium text-center text-3xl my-4">Our Team</h2>
+    <div class="team-control flex justify-between items-center">
+      <div
+        class="team-group w-[22rem] h-[24rem] border border-gray-300 p-8 text-center rounded-2xl"
+      >
+        <img [src]="member01" class="w-[100%] h-auto" alt="" />
+        <h3 class="font-medium text-lg">John Doe</h3>
+        <p class="font-extralight">Front End Developer</p>
+      </div>
+      <div
+        class="team-group w-[22rem] h-[24rem] border border-gray-300 p-8 text-center rounded-2xl"
+      >
+        <img [src]="member02" class="w-[100%] h-auto" alt="" />
+        <h3 class="font-medium text-lg">Jane Doe</h3>
+        <p class="font-extralight">Back End Developer</p>
+      </div>
+      <div
+        class="team-group w-[22rem] h-[24rem] border border-gray-300 p-8 text-center rounded-2xl"
+      >
+        <img [src]="member03" class="w-[100%] h-auto" alt="" />
+        <h3 class="font-medium text-lg">John Smith</h3>
+        <p class="font-extralight">Full Stack Developer</p>
+      </div>
+    </div>
+  </div>
+</div>
