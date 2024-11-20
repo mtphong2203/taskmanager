@@ -1,0 +1,22 @@
+.sidebar {
+  position: absolute;
+  top: 56px;
+  bottom: 0;
+  left: 0;
+  width: 220px;
+  height: 92%;
+  border-right: 1px solid #ccc;
+}
+
+h2,
+a {
+  padding: 0.8rem;
+  border-bottom: 1px solid #ccc;
+  font-weight: 700;
+}
+
+a:hover,
+h2:hover {
+  background-color: #ccc;
+  color: rgb(40, 33, 33);
+}
