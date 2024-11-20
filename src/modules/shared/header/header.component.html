@@ -45,7 +45,14 @@
       >
     </div>
 
-    <div class="profile" *ngIf="currentPage == 'about'">
+    <div
+      class="profile"
+      *ngIf="
+        currentPage == 'about' ||
+        currentPage == 'contact' ||
+        currentPage == 'quizzes'
+      "
+    >
       <a [routerLink]="['/user']">
         <img [src]="userLogo" class="w-8 h-8" alt="" />
       </a>
