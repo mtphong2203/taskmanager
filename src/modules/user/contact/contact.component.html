@@ -1,0 +1,73 @@
+<div class="contact w-[80%] m-auto py-8">
+  <h1 class="text-center text-3xl font-medium">Contact</h1>
+  <div class="contact-content flex justify-between gap-8">
+    <div class="contact-feedback">
+      <h3>FeedBack</h3>
+      <p>
+        Please fill out the form below to send us your feedback. We will
+        response to you as soon as possible
+      </p>
+      <form #myForm="ngForm" (ngSubmit)="onSubmit(myForm)">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            [(ngModel)]="model.name"
+            placeholder="Enter your name"
+          />
+        </div>
+        <div class="form-group">
+          <label for="name">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            [(ngModel)]="model.email"
+            placeholder="Enter your email"
+          />
+        </div>
+        <div class="form-group">
+          <label for="name">Message</label>
+          <textarea
+            name="message"
+            id="message"
+            [rows]="3"
+            [cols]="60"
+            placeholder="Message"
+          ></textarea>
+        </div>
+
+        <button type="submit" [disabled]="!myForm.form.valid">Send</button>
+      </form>
+    </div>
+    <div class="contact-info">
+      <h3>Our Infomation</h3>
+      <p>
+        We will always be here to help you. These are some way to contact us
+      </p>
+      <div class="contact-group">
+        <i class=""></i>
+        <a
+          href="mailto:maiphong2203@gmail.com"
+          class="contact-link text-blue-500"
+        >
+          maiphong2203&#64;gmail.com
+        </a>
+      </div>
+
+      <div class="contact-group">
+        <i class="fa-solid fa-phone"></i>
+        <a href="tel:" class="contact-link text-blue-500">+84 678 984</a>
+      </div>
+      <div class="contact-group">
+        <i class=""></i>
+        <a href="mailto:" class="contact-link text-blue-500"
+          >Đông Hạ, Đông Yên, Quốc Oai, Hà Nội</a
+        >
+      </div>
+      <div class="contact-social"></div>
+    </div>
+  </div>
+</div>
